@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
       <NeuralBackground />
       <div className="absolute top-0 right-0 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-neon-purple/20 rounded-full blur-[80px] sm:blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-neon-orange/20 rounded-full blur-[80px] sm:blur-[100px] pointer-events-none"></div>
-      
+
       {/* Logos */}
       <div className="absolute top-20 sm:top-24 left-0 right-0 z-30 container mx-auto px-4 flex justify-between items-start pointer-events-none">
         <motion.div
@@ -23,28 +23,28 @@ export const Hero: React.FC = () => {
             <img src="assets/1666094039681.jpg" alt="Govt Logo" className="w-full h-full p-1 object-contain" />
           </div>
           <div className="text-gray-800 text-[9px] sm:text-[10px] leading-tight font-bold border-l border-orange-300 pl-2">
-            Electronics & Information<br/>
-            <span className="text-neon-orange">Technology Department</span><br/>
+            Electronics & Information<br />
+            <span className="text-neon-orange">Technology Department</span><br />
             Government of Odisha
           </div>
         </motion.div>
 
         <motion.div
-           initial={{ opacity: 0, x: 20 }}
-           animate={{ opacity: 1, x: 0 }}
-           className="bg-white rounded-lg p-2 shadow-[0_0_20px_rgba(255,107,53,0.15)] border border-orange-200/50 pointer-events-auto hidden sm:block"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="bg-white rounded-lg p-2 shadow-[0_0_20px_rgba(255,107,53,0.15)] border border-orange-200/50 pointer-events-auto hidden sm:block"
         >
-            <div className="flex items-center gap-2">
-                <div className="text-gray-800 font-bold text-sm tracking-widest font-display">OCAC</div>
-                <div className="text-[8px] text-gray-600 leading-tight border-l border-gray-300 pl-2">
-                    Odisha Computer<br/>Application Centre
-                </div>
+          <div className="flex items-center gap-2">
+            <div className="text-gray-800 font-bold text-sm tracking-widest font-display">OCAC</div>
+            <div className="text-[8px] text-gray-600 leading-tight border-l border-gray-300 pl-2">
+              Odisha Computer<br />Application Centre
             </div>
+          </div>
         </motion.div>
       </div>
 
       <div className="container mx-auto px-4 z-20 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-20 lg:mt-8">
-        
+
         {/* Left: Text Content */}
         <div className="space-y-6 text-center lg:text-left relative order-2 lg:order-1">
           <motion.div
@@ -55,11 +55,11 @@ export const Hero: React.FC = () => {
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-black leading-tight tracking-tight mb-2 text-gray-800">
               ODISHA<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-orange-600 to-neon-orange text-glow">
-              𝐀𝐈 𝐒𝐮𝐦𝐦𝐢𝐭 𝟮𝟬𝟮𝟱
+                𝐀𝐈 𝐒𝐮𝐦𝐦𝐢𝐭 𝟮𝟬𝟮𝟱
               </span>
             </h1>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3 }}
@@ -70,69 +70,69 @@ export const Hero: React.FC = () => {
             </motion.div>
 
             <div className="mt-4 sm:mt-6 mb-6 p-4 sm:p-6 rounded-2xl glass-card-strong border-l-4 border-l-neon-purple max-w-xl mx-auto lg:mx-0">
-                <p className="text-orange-600 text-xs sm:text-sm uppercase tracking-widest mb-1">Pre-event to</p>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 font-display">India AI Impact Summit 2026</h3>
+              <p className="text-orange-600 text-xs sm:text-sm uppercase tracking-widest mb-1">Pre-event to</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 font-display">India AI Impact Summit 2026</h3>
             </div>
 
             <p className="text-gray-600 text-base sm:text-lg max-w-lg mx-auto lg:mx-0 font-light leading-relaxed">
-            We’re excited to invite AI-driven organizations and startups to join us at the Odisha AI Summit 2025 on 19th-20th December at the State Convention Centre, Bhubaneswar. 
+              We’re excited to invite AI-driven organizations and startups to join us at the Odisha AI Summit 2025 on 19th-20th December at the State Convention Centre, Bhubaneswar.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <Button variant="glow" onClick={() => document.getElementById('proposals')?.scrollIntoView({ behavior: 'smooth'})} className="text-base sm:text-lg px-8 w-full sm:w-auto">
+            <Button variant="glow" onClick={() => document.getElementById('proposals')?.scrollIntoView({ behavior: 'smooth' })} className="text-base sm:text-lg px-8 w-full sm:w-auto">
               Call For Proposals
             </Button>
             <Button variant="outline" className="text-base sm:text-lg w-full sm:w-auto">
-               Download Brochure
+              Download Brochure
             </Button>
           </motion.div>
         </div>
 
         {/* Right: Map Visualization */}
         <div className="relative h-[350px] sm:h-[450px] lg:h-[600px] flex items-center justify-center z-10 order-1 lg:order-2">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="relative w-full h-full animate-float flex items-center justify-center p-4"
           >
             <img
-               src="assets/odisha-map.png"
-               alt="Odisha Map"
-               className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,107,53,0.4)]"
-               style={{
-                 maxWidth: '95%',
-                 maxHeight: '95%',
-                 filter: 'sepia(1) hue-rotate(25deg) saturate(1.5) brightness(1.1) contrast(1.2)'
-               }}
+              src="assets/odisha-map.png"
+              alt="Odisha Map"
+              className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,107,53,0.4)]"
+              style={{
+                maxWidth: '95%',
+                maxHeight: '95%',
+                filter: 'sepia(1) hue-rotate(-10deg) saturate(3) brightness(1.1) contrast(1.2)'
+              }}
             />
 
             {/* Deep Glow Pulse Behind Map */}
             <div className="absolute inset-0 bg-neon-orange/20 blur-3xl rounded-full animate-pulse-slow pointer-events-none"></div>
 
             {/* Tech Nodes/Circles Overlay */}
-             <motion.div 
-                className="absolute inset-0 pointer-events-none"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1 }}
-             >
-                {/* Bhubaneswar Node */}
-                <div className="absolute top-[55%] left-[70%]">
-                    <div className="w-4 h-4 bg-neon-orange rounded-full animate-ping absolute"></div>
-                    <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_20px_rgba(255,107,53,1)] relative z-10"></div>
-                </div>
+            <motion.div
+              className="absolute inset-0 pointer-events-none"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+            >
+              {/* Bhubaneswar Node */}
+              <div className="absolute top-[55%] left-[70%]">
+                <div className="w-4 h-4 bg-neon-orange rounded-full animate-ping absolute"></div>
+                <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_20px_rgba(255,107,53,1)] relative z-10"></div>
+              </div>
 
-                {/* Other Nodes */}
-                <div className="absolute top-[30%] left-[40%] w-2 h-2 bg-neon-orange rounded-full animate-pulse opacity-60"></div>
-                <div className="absolute bottom-[35%] left-[30%] w-2 h-2 bg-neon-orange rounded-full animate-pulse delay-75 opacity-60"></div>
-             </motion.div>
+              {/* Other Nodes */}
+              <div className="absolute top-[30%] left-[40%] w-2 h-2 bg-neon-orange rounded-full animate-pulse opacity-60"></div>
+              <div className="absolute bottom-[35%] left-[30%] w-2 h-2 bg-neon-orange rounded-full animate-pulse delay-75 opacity-60"></div>
+            </motion.div>
 
             {/* Venue Card */}
             <motion.div
@@ -141,30 +141,30 @@ export const Hero: React.FC = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.2 }}
             >
-               <MapPin className="text-neon-orange w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
-               <div className="text-left">
-                 <div className="text-[10px] sm:text-xs text-orange-600 uppercase font-semibold">Venue</div>
-                 <div className="text-xs sm:text-sm font-bold text-gray-800 leading-tight">
-                    State Convention Centre,<br/>Bhubaneswar
-                 </div>
-               </div>
+              <MapPin className="text-neon-orange w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0" />
+              <div className="text-left">
+                <div className="text-[10px] sm:text-xs text-orange-600 uppercase font-semibold">Venue</div>
+                <div className="text-xs sm:text-sm font-bold text-gray-800 leading-tight">
+                  State Convention Centre,<br />Bhubaneswar
+                </div>
+              </div>
             </motion.div>
           </motion.div>
         </div>
       </div>
-      
+
       {/* QR Code - Creative Floating Design - Fixed Position */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.5, rotate: -10, x: 50 }}
-        animate={{ 
-          opacity: 1, 
-          scale: 1, 
+        animate={{
+          opacity: 1,
+          scale: 1,
           rotate: 0,
           x: 0,
           y: [0, -12, 0],
         }}
-        transition={{ 
-          delay: 1.5, 
+        transition={{
+          delay: 1.5,
           duration: 0.8,
           x: {
             duration: 0.8,
@@ -176,7 +176,7 @@ export const Hero: React.FC = () => {
             ease: "easeInOut",
           }
         }}
-        whileHover={{ 
+        whileHover={{
           scale: 1.08,
           rotate: 3,
           y: -5,
@@ -208,13 +208,13 @@ export const Hero: React.FC = () => {
               transition={{ duration: 2, repeat: Infinity }}
               className="p-2 bg-white rounded-xl mb-2"
             >
-              <img 
-                src="assets/Odisha_qr.png" 
-                alt="Scan QR Code" 
+              <img
+                src="assets/Odisha_qr.png"
+                alt="Scan QR Code"
                 className="w-28 h-28 sm:w-36 sm:h-36 object-contain"
               />
             </motion.div>
-            
+
             {/* Decorative Elements */}
             <div className="flex items-center gap-2 mb-2">
               <div className="w-1 h-1 bg-neon-purple rounded-full animate-pulse"></div>
@@ -223,7 +223,7 @@ export const Hero: React.FC = () => {
               </p>
               <div className="w-1 h-1 bg-neon-blue rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
             </div>
-            
+
             {/* Animated Scan Line Effect */}
             <motion.div
               animate={{ y: [0, 144, 0] }}
@@ -242,7 +242,7 @@ export const Hero: React.FC = () => {
 
         {/* Floating Particles */}
         <motion.div
-          animate={{ 
+          animate={{
             y: [0, -10, 0],
             opacity: [0.5, 0.8, 0.5]
           }}
@@ -250,7 +250,7 @@ export const Hero: React.FC = () => {
           className="absolute -top-2 -right-2 w-2 h-2 bg-neon-purple rounded-full blur-sm"
         ></motion.div>
         <motion.div
-          animate={{ 
+          animate={{
             y: [0, -8, 0],
             opacity: [0.4, 0.7, 0.4]
           }}
@@ -258,8 +258,8 @@ export const Hero: React.FC = () => {
           className="absolute -bottom-2 -left-2 w-1.5 h-1.5 bg-neon-blue rounded-full blur-sm"
         ></motion.div>
       </motion.div>
-      
-      <motion.div 
+
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}

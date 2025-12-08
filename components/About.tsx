@@ -8,7 +8,7 @@ export const About: React.FC = () => {
     <section id="about" className="py-16 md:py-20 bg-gradient-to-br from-orange-50 via-white to-orange-100 relative z-10 border-b border-orange-200/30">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -16,18 +16,18 @@ export const About: React.FC = () => {
           >
             <div className="absolute inset-0 bg-neon-purple/10 blur-[100px] rounded-full"></div>
             <img
-              src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1000&auto=format&fit=crop"
+              src="assets/12.jpg"
               alt="Digital Transformation & AI Innovation"
               className="relative z-10 rounded-2xl shadow-[0_0_30px_rgba(255,107,53,0.3)] border border-orange-200/30 w-full"
             />
             {/* Adjusted positioning for mobile to stay within bounds */}
             <div className="absolute -bottom-6 right-4 sm:-right-6 bg-odisha-secondary p-4 sm:p-6 rounded-xl border border-neon-blue/30 shadow-xl z-20">
-              <div className="text-3xl sm:text-4xl font-display font-bold text-gray-800 mb-1">500+</div>
+              <div className="text-3xl sm:text-4xl font-display font-bold text-gray-800 mb-1">100+</div>
               <div className="text-xs sm:text-sm text-gray-600 uppercase tracking-wider">Delegates</div>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -38,7 +38,7 @@ export const About: React.FC = () => {
 
             </p>
             <p className="text-gray-600 leading-relaxed mb-8 text-sm sm:text-base">
-            One of the key components of the summit will be the Experience Zones, where selected innovators will showcase live solutions across but not limited to sectors like agriculture, healthcare, disaster management, mobility, governance, and more.
+              One of the key components of the summit will be the Experience Zones, where selected innovators will showcase live solutions across but not limited to sectors like agriculture, healthcare, disaster management, mobility, governance, and more.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
